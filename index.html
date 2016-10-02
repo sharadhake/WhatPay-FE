@@ -12,6 +12,11 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="js/jquery.1.8.3.min.js"></script>
     <script src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    <!--User-defined js-->
+    <script src="js/functional/common.js"></script>
+    <script src="js/functional/login.js"></script>
+
 </head>
 <body>
     <div class="container">
@@ -20,26 +25,26 @@
         <br/>
         <div class="panel panel-default">
             <div class="panel-body">
-                <form class="form-horizontal">
+                <div class="form-horizontal">
                     <div class="form-group">
-                        <label for="inputEmail3" class="col-sm-2 control-label">Mobile Number</label>
+                        <label for="inputMobileNumber" class="col-sm-2 control-label">Mobile Number</label>
                         <div class="col-sm-10">
-                            <input type="email" class="form-control" id="inputEmail3" placeholder="Mobile Number">
+                            <input type="text" class="form-control" id="inputMobileNumber" placeholder="Mobile Number" value="612345678">
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="inputPassword3" class="col-sm-2 control-label">Admin Access Code</label>
+                        <label for="inputAccessID" class="col-sm-2 control-label">Admin Access Code</label>
                         <div class="col-sm-10">
-                            <input type="password" class="form-control" id="inputPassword3" placeholder="Admin Access Code">
+                            <input type="password" class="form-control" id="inputAccessID" placeholder="Admin Access Code" value="Sudhakar">
                         </div>
                     </div>
 
                     <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" class="btn btn-group-lg btn-primary center-block">Start</button>
+                            <button type="submit" class="btn btn-group-lg btn-primary center-block" onclick="javascript:loginUSER();">Start</button>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
 
